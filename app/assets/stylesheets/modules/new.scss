@@ -1,0 +1,90 @@
+.data-list {
+  background-color: whitesmoke;
+  height: 75%;
+  width: 80%;
+  border: 5px solid steelblue;
+  margin: 50px auto;
+  border-radius: 5px;
+  overflow: scroll;
+  .register-baby {
+    padding: 0 20px;
+    h1 {
+      color: #555;
+      font-weight: bold;
+      font-size: 30px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .data {
+      &__name {
+        // background-color: yellow;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &__gender {
+  
+        }
+      }
+      &__image {
+        background-color: white;
+        height: 200px;
+        width: 50%;
+        float: right;
+        margin-bottom: 20px;
+      }
+      &__status {
+        &__birthday {
+          // background-color: red;
+          height: 50px;
+          width: 50%;
+          margin-bottom: 20px;
+        }
+        &__height {
+          // background-color: royalblue;
+          height: 50px;
+          width: 50%;
+          margin-bottom: 20px;
+        }
+        &__weight {
+          // background-color: seagreen;
+          height: 50px;
+          width: 50%;
+          margin-bottom: 20px;
+        }
+        &__tempa {
+          // background-color: slateblue;
+          height: 50px;
+          width: 50%;
+          margin-bottom: 20px;
+        }
+        &__milk {
+          // background-color: springgreen;
+          height: 50px;
+          width: 50%;
+          margin-bottom: 20px;
+        }
+        &__sleep {
+          // background-color: tomato;
+          height: 50px;
+          width: 50%;
+          margin-bottom: 20px;
+        }
+        &__poop {
+          // background-color: violet;
+          height: 50px;
+          width: 50%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .namebox {
+      height: 35px;
+      width: 250px;
+    }
+    .baby-image {
+      display: none;
+    }
+  }
+}

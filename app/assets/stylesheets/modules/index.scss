@@ -1,0 +1,145 @@
+.wrapper {
+  height: 100%;
+  padding: 30px 50px;
+}
+
+.contents {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  .header {
+    background-color: lightpink;
+    height: 70px;
+    &__left {
+      width: 30%;
+      float: left;
+      display: flex;
+      &__logo {
+        font-size: 200%;
+        margin-left: 5%;
+        line-height: 70px;
+        cursor: pointer;
+        a {
+          color: white;
+          cursor: pointer;
+        }
+      }
+      &__name {
+        color: white;
+        font-size: 20px;
+        padding: 10px 10px;
+        font-weight: bold;
+        p {
+          font-size: 10px;
+          color: white;
+        }
+        .logo-icon {
+          margin: 1%;
+        }
+      }
+    }
+    &__right {
+      width: 20%;
+      float: right;
+      &__sub-menu {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .user-content {
+    background-color: lightpink;
+    height: 200px;
+    width: 60%;
+    margin: 50px auto 30px;
+    padding: 2%;
+    display: flex;
+    border-radius: 5px;
+    &__box {
+      height: 100%;
+      width: 30%;
+      &__name {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        .user-name {
+          font-size: 24px;
+        }
+      }
+      &__image {
+        background-color: white;
+        height: 130px;
+        width: 130px;
+        margin: 0 auto;
+      }
+    }
+    .user-mask {
+      height: 80px;
+      width: 65%;
+      padding: 20px 30px;
+      &__name {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      &__job {
+        color: white;
+      }
+    }
+  }
+    .edit-btn {
+      color: white;
+      font-size: 34px;
+    }
+  .add-baby {
+    background-color: whitesmoke;
+    height: 50px;
+    width: 60%;
+    margin: 30px auto;
+    padding: 1%;
+    border: 5px solid steelblue;
+    border-radius: 5px;
+    // box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.5);
+    a {
+      text-decoration: none;
+      color: steelblue;
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+  .babies {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    overflow: scroll;
+    &__baby-box {
+      background-color: steelblue;
+      height: 180px;
+      width: 30%;
+      margin: 0 auto 50px;
+      padding: 2%;
+      border-radius: 5px;
+      &__name {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+      }
+      &__image {
+        background-color: white;
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
