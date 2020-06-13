@@ -1,10 +1,9 @@
 .account-page {
   .account-page__inner {
-    width: 980px;
+    width: 700px;
     margin: 60px auto;
-    padding: 60px;
-    background-color: whitesmoke;
-    border: 1px solid lightpink;
+    // padding: 60px;
+    // border: 1px solid lightpink;
     border-radius: 5px;
 
     .account-page__inner--left, .account-page__inner--right {
@@ -64,11 +63,14 @@
 
     .field-input {
       input {
-        width: 100%;
+        width: 70%;
         padding: 10px;
         letter-spacing: 1px;
       }
     }
+  }
+  .user-image {
+    display: none;
   }
 
   .btn {

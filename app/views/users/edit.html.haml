@@ -21,6 +21,7 @@
           .field-label
             = f.label :image
           .field-input
-            = f.file_field :image
+            = f.file_field :image, class: "user-image"
+            = icon("fa", "camera", class: "image-icon")
         .actions
           = f.submit "Update", class: 'btn'

@@ -1,0 +1,28 @@
+.container
+  %ul.tab-menu
+    %li
+      %a.menu-item.active{href: "#"}
+        Amazon
+    %li
+      %a.menu-item{href: "#"}
+        楽天
+  %ul.shop-lists
+    %li.shop-list.show
+      %h2 欲しい商品を検索
+      = text_field_tag :good, "",  id: "good_search", name: "keyword", placeholder: "キーワードを入力", style: "width: 200px;"
+      %button{title: "検索", type: "submit"} 検索
+      %h2 検索結果
+      .item
+
+    %li.shop-list
+      %h2 欲しい商品を検索
+      = text_field_tag :good, "",  id: "good_search", name: "keyword", placeholder: "キーワードを入力", style: "width: 200px;"
+      %button{title: "検索", type: "submit"} 検索
+      %h2 検索結果
+      .item
+
+    
+
+    
+
+      

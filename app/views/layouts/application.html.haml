@@ -5,7 +5,34 @@
     %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0", name: "viewport"}
     %title Babulog3
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
   %body
-    = yield
+    .wrapper
+      .contents
+        .header
+          .header__left
+            .header__left__logo
+              = link_to root_path do
+                %label
+                  = icon("fa", "baby", class: "logo-icon")
+            .header__left__name
+              %label
+                ばぶろぐ
+                %p babulog
+          .header__right
+            .header__right__sub-menu
+              %ul.dropdown
+                %li
+                  menu
+                  %i#arrow.fas.fa-caret-square-up
+                  %ul.submenu
+                    %li
+                      -# %a{href: events_path} カレンダー
+                    %li
+                      %a{href: "#"} 日記
+                    %li
+                      %a{href: "#"} 成長記録
+                    %li
+                      %a{href: shops_path} ショップリンク
+        = yield
