@@ -3,7 +3,7 @@
   display: flex;
   .baby {
     background-color: steelblue;
-    height: 80vh;
+    height: calc(90vh - 70px);
     width: 25%;
     padding: 3%  0 3% 3%;
     &__image {
@@ -40,13 +40,12 @@
   }
   .messages {
     background-color: whitesmoke;
-    height: 80vh;
     width: 75%;
     margin: 0 auto;
     .message {
       display: flex;
       padding-right: 15px;
-      height: 505px;
+      height: calc(90vh - 140px);
       overflow: scroll;
       &__mask {
         margin: 20px 10px 15px 30px;
