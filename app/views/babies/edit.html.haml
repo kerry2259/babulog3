@@ -2,18 +2,6 @@
   .register-baby
     %h1 成長記録の更新
     .data
-<<<<<<< Updated upstream
-=======
-      .data__name
-        名前：
-        %input{name: "text", type: "text", placeholder: "お名前を入力してください", class: "namebox"}
-        .data__gender
-          性別：
-          %input{name: "radio", type: "radio", value: "1"}
-          男の子
-          %input{name: "radio", type: "radio", value: "2"}
-          女の子
->>>>>>> Stashed changes
       .data__image
         %input{name: "file", type: "file", class: "baby-image"}
           = icon("fa", "camera", class: "image-icon")
@@ -22,12 +10,6 @@
       -# =form_for @baby do |f|
       -#   = f.text_field :name, class: "baby's-name-form__input", placeholder: "赤ちゃんの名前を入力してください"
       .data__status
-<<<<<<< Updated upstream
-=======
-        .data__status__birthday
-          誕生日： 
-          %input{name: "bday", type: "date"}
->>>>>>> Stashed changes
         .data__status__height
           身長：   
           %input{type: "number"}
