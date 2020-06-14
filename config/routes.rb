@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :edit, :update]
   resources :shops, only: [:index]
   resources :events, only: [:index]
-  resources :babies, only: [:new, :create, :edit, :update] do
+  resources :babies, only: [:index, :new, :create, :edit, :update] do
     resources :messages, only: [:index, :create]
   end
 end

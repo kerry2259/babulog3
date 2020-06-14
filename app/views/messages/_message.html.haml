@@ -1,11 +1,11 @@
 .tweet-content
   .baby
     .baby__image
-      = image_tag("5B02B075-E90A-4BEE-BD77-64F75B811CD0.JPEG", class: "baby_image")
+      -# = image_tag("5B02B075-E90A-4BEE-BD77-64F75B811CD0.JPEG", class: "baby_image")
     .baby__image__name
       = @baby.name
     .group-user
-      メンバーリスト
+      %h2 メンバーリスト
       .group-user__member
         .group-user__member__name
           - @baby.users.each do |user|
@@ -25,7 +25,7 @@
     .form
       %form.new_message
         .input-box
-          = form_for [@baby, @message], url: { :controller => :messages, :action => :create} do |f|
+          = form_for [@baby, @message] do |f|
             = f.label :image, class: "input-box__image" do
               = icon("fa", "grin-alt", class: "image-icon")
               = icon("fa", "camera", class: "image-icon")
