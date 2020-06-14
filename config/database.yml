@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: babulog3_production
-  username: babulog3
-  password: <%= ENV['BABULOG3_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
