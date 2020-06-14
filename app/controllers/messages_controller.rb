@@ -8,7 +8,7 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = @baby.message.new(message_params)
+    @message = @baby.messages.new(message_params)
     if @message.save
       redirect_to baby_messages_path(@baby)
     else
